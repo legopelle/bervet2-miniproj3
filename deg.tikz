@@ -1,0 +1,36 @@
+% This file was created by matlab2tikz.
+% Minimal pgfplots version: 1.3
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.95092\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=1,
+xmax=6,
+xlabel={Polynomgrad},
+ymin=1.16,
+ymax=1.23,
+ylabel={Varians},
+title style={font=\bfseries},
+title={Varians för olika polynomgrad}
+]
+\addplot [color=mycolor1,solid,forget plot]
+  table[row sep=crcr]{%
+1	1.2088124754794\\
+2	1.19139469716441\\
+3	1.17812134040474\\
+4	1.18355928255531\\
+5	1.16942765434969\\
+6	1.22655928448933\\
+};
+\end{axis}
+\end{tikzpicture}%
